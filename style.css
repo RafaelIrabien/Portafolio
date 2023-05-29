@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ebrima';
+    color: var(--secondary);
+}
+
+/* Contiene todos los colores primarios y secundarios 
+que utilizará la página */
+:root {
+    --primary: #18db86;
+    --secondary: white;
+    --secondary-light: rgb(173, 173, 173);
+    --dark1: #222222;
+    --dark2: #050505;
+}
+
+.navbar {
+    /*Posicionamos los elementos a la esquina derecha */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar a {
+    font-size: 1.5rem;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+
+.hero {
+    background-color: var(--dark2);
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 530px;
+    opacity: 0.35;
+}
+
+
+/*circle profile */
+.profile div {
+    position: absolute;
+}
+
+.profile {
+    /*Centramos y acomodamos los elementos */
+    display: flex;
+    justify-content: center;
+}
+
+.square {
+    width: 420px;
+    height: 460px;
+    background-color: var(--dark1);
+    opacity: 0.7;
+    z-index: 10;
+    top: 70px;
+}
+
+.circle-trans {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    border: solid 30px var(--primary);
+    opacity: .2;
+    z-index: 19;
+    top: 90px;
+}
+
+.circle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: solid 15px var(--primary);
+    z-index: 21;
+    top: 120px;
+}
+
+.profile-img {
+    top: 134px;
+    z-index: 20;
+}
+
+.profile-img img {
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+}
+
+
+.square-text {
+    font-size: 1.9rem;
+    color: var(--secondary);
+    top: 380px;
+    z-index: 11;
+}
+
+.square-text2 {
+    font-size: 1.2rem;
+    color: var(--secondary);
+    top: 418px;
+    z-index: 11;
+}
+
+.square-text3 {
+    font-size: 1.3rem;
+    color: var(--secondary);
+    top: 490px;
+    z-index: 11;
+}
+
+.square-text3 a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.contact-icon {
+    top: 450px;
+    z-index: 11;
+}
+
+.contact-icon img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+span {
+    color: var(--primary);
+}

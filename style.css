@@ -12,7 +12,7 @@ body {
 /* Contiene todos los colores primarios y secundarios 
 que utilizará la página */
 :root {
-    --primary: #18db86;
+    --primary: #18c4db;
     --secondary: white;
     --secondary-light: rgb(173, 173, 173);
     --dark1: #222222;
@@ -36,6 +36,10 @@ que utilizará la página */
     text-decoration: none;
     color: white;
     margin: 20px;
+}
+
+.navbar a:hover {
+    border-bottom: var(--primary) solid;
 }
 
 
@@ -123,6 +127,10 @@ que utilizará la página */
     z-index: 11;
 }
 
+.square-text3:hover {
+    border-bottom: var(--primary) solid;
+}
+
 .square-text3 a{
     text-decoration: none;
     color: var(--secondary);
@@ -136,6 +144,11 @@ que utilizará la página */
 .contact-icon img {
     width: 40px;
     margin: 0 10px;
+}
+
+.contact-icon img:hover {
+    /*Agranda las imagenes al pasar el mouse*/
+    transform: scale(1.2);
 }
 
 span {

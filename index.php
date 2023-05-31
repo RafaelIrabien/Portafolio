@@ -51,6 +51,17 @@
             
         </div>
     </header>
+
+
+    <section class="briefcase" id="briefcase">
+        <div class="briefcase-section">
+            <h2><span>Portafolio</span></h2>
+            <div class="briefcase-grid">
+                <div><img src="img/Gestor de archivos.png" alt=""></div>
+                <div><img src="img/Portafoli.png" alt=""></div>
+            </div>
+        </div>
+    </section>
     
 </body>
 </html>

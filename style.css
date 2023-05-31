@@ -154,3 +154,35 @@ que utilizará la página */
 span {
     color: var(--primary);
 }
+
+
+/* Briefcase */
+.briefcase {
+    background-color: var(--dark1);
+}
+
+.briefcase-section h2 {
+    padding: 40px;
+    text-align: center;
+}
+
+.briefcase-grid {
+    display: grid;
+    /*Con autofit hacemos que todos los elementos se creen dependiendo del 
+    tamaño de la pantalla*/
+    grid-template-columns: repeat(auto-fit,minmax(290px,auto));
+    /*Separamos las imagenes*/
+    gap: 15px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.briefcase-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.briefcase-grid img:hover {
+    transform: scale(1.1);
+}

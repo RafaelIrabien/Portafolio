@@ -224,3 +224,27 @@ section.skills {
     justify-content: center;
     gap: 50px;
 }
+
+/* tooltips */
+.skill h3 {
+    background-color: var(--dark2);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    font-size: 1.1rem;
+    color: var(--primary);
+    width: 100px;
+    transform: translate(0px, -100px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 0;
+}
+
+.knowledge>div:hover h3 {
+    opacity: 1;
+    transform: translate(0px, -150px);
+}
+
+.tools>div:hover h3 {
+    opacity: 1;
+    transform: translate(0px, -150px);
+}

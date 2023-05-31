@@ -63,7 +63,7 @@
         </div>
     </section>
 
-    
+
     <!-- Sección de Habilidades -->
     <section class="skills">
         <div class="skill">
@@ -93,6 +93,10 @@
                 <div>
                     <img src="img/github-icon.png" alt="">
                     <h3>GitHub</h3>
+                </div>
+                <div>
+                    <img src="img/vsc-icon.png" alt="">
+                    <h3>Visual Studio</h3>
                 </div>
             </div>
         </div>

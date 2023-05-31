@@ -186,3 +186,41 @@ span {
 .briefcase-grid img:hover {
     transform: scale(1.1);
 }
+
+
+/* Skills */
+section.skills {
+    background-color: var(--dark1);
+}
+
+.skill {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+    justify-content: center;
+    gap: 170px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 110px;
+}
+
+.skill h2 {
+    padding-bottom: 60px;
+}
+
+.skill img {
+    width: 90px;
+}
+
+.knowledge {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px,auto));
+    justify-content: center;
+    gap: 25px;
+}
+
+.tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px,auto));
+    justify-content: center;
+    gap: 50px;
+}

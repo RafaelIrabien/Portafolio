@@ -52,7 +52,7 @@
         </div>
     </header>
 
-
+    <!-- Sección de Portafolio -->
     <section class="briefcase" id="briefcase">
         <div class="briefcase-section">
             <h2><span>Portafolio</span></h2>
@@ -60,6 +60,42 @@
                 <div><img src="img/Gestor de archivos.png" alt=""></div>
                 <div><img src="img/Portafoli.png" alt=""></div>
             </div>
+        </div>
+    </section>
+
+    
+    <!-- Sección de Habilidades -->
+    <section class="skills">
+        <div class="skill">
+        <div class="knowledge-part">
+            <h2><span>Conocimientos</span></h2>
+            <div class="knowledge">
+                <div>
+                    <img src="img/html-icon.png" alt="">
+                    <h3>HTML</h3>
+                </div>
+         
+                <div>
+                    <img src="img/css-icon.png" alt="">
+                    <h3>CSS</h3>
+                </div>
+           
+                <div>
+                    <img src="img/js-icon.png" alt="">
+                    <h3>JavaScript</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="tools-part">
+            <h2><span>Herramientas</span></h2>
+            <div class="tools">
+                <div>
+                    <img src="img/github-icon.png" alt="">
+                    <h3>GitHub</h3>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
     

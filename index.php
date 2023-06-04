@@ -102,6 +102,24 @@
         </div>
         </div>
     </section>
+
+    <!-- Sección de Sobre mi -->
+    <section class="about">
+        <div class="about-flex">
+            <div class="about-info">
+                <p>Actualmente graduado como Ingeniero en Desarrollo y Gestión de Software. 
+                    Apasionado por el desarrollo y el diseño de aplicaciones web. Preparado para utilizar mis habilidades y pasión para impulsar la misión de una compañía. 
+                    Aporto una actitud positiva y la voluntad y motivación para aprender nuevas cosas.
+                </p>
+            </div>
+
+            <div class="social">
+                <a href=""><img src="img/github.svg" alt=""></a>
+                <a href=""><img src="img/linkedin.svg" alt=""></a>
+                <a href=""><img src="img/message.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
     
 </body>
 </html>

@@ -225,7 +225,8 @@ section.skills {
     gap: 50px;
 }
 
-/* tooltips */
+
+/* efectos de tooltips */
 .skill h3 {
     background-color: var(--dark2);
     text-align: center;
@@ -247,4 +248,43 @@ section.skills {
 .tools>div:hover h3 {
     opacity: 1;
     transform: translate(0px, -150px);
+}
+
+
+
+/* about */
+.about {
+    background-color: var(--dark2);
+}
+
+.about-flex {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    /*50px arriba, 0px a los lados y 200px abajo*/
+    padding: 50px 0 200px;
+}
+
+.about p {
+    font-size: 1.5rem;
+    /*Separamos el parrafo de los bordes*/
+    width: 90%;
+    margin: 0 auto;
+    /*Separación entre lineas*/
+    line-height: 2.5rem;
+    color: var(--secondary-light);
+}
+
+.social {
+    border-left: var(--secondary) 5px solid;
+    padding-left: 50px;
+}
+
+.social img {
+    width: 60px;
+    margin: 10px;
+}
+
+.social img:hover {
+    transform: scale(1.2);
 }

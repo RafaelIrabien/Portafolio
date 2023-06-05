@@ -9,6 +9,14 @@ body {
     color: var(--secondary);
 }
 
+/*Hacemos responsive la pagina*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
 /* Contiene todos los colores primarios y secundarios 
 que utilizará la página */
 :root {
@@ -194,6 +202,7 @@ section.skills {
 }
 
 .skill {
+    padding: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,auto));
     justify-content: center;

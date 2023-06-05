@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Dependencias-->
+    <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal.min.css">
 </head>
 <body>
 
     <header>
         <div class="hero">
+          <div class="container">
             <div class="navbar">
                 <nav>
                     <ul>
@@ -23,6 +27,7 @@
 
             <img src="img/fondo_header.jpg" alt="">
         </div>
+        </div><!-- Fin de container -->
 
 
         <div class="profile">
@@ -46,7 +51,8 @@
                     <span>Sobre mí</span>
                 </a>
             </div>
-
+            
+        
                 
             
         </div>
@@ -54,7 +60,7 @@
 
     <!-- Sección de Portafolio -->
     <section class="briefcase" id="briefcase">
-        <div class="briefcase-section">
+        <div class="briefcase-section container">
             <h2><span>Portafolio</span></h2>
             <div class="briefcase-grid">
                 <div><img src="img/Gestor de archivos.png" alt=""></div>
@@ -63,10 +69,10 @@
         </div>
     </section>
 
-
+    
     <!-- Sección de Habilidades -->
     <section class="skills">
-        <div class="skill">
+        <div class="skill container">
         <div class="knowledge-part">
             <h2><span>Conocimientos</span></h2>
             <div class="knowledge">
@@ -104,8 +110,8 @@
     </section>
 
     <!-- Sección de Sobre mi -->
-    <section class="about">
-        <div class="about-flex">
+    <section class="about" id="about-me">
+        <div class="about-flex container">
             <div class="about-info">
                 <p>Actualmente graduado como Ingeniero en Desarrollo y Gestión de Software. 
                     Apasionado por el desarrollo y el diseño de aplicaciones web. Preparado para utilizar mis habilidades y pasión para impulsar la misión de una compañía. 
@@ -120,6 +126,9 @@
             </div>
         </div>
     </section>
+
+
+    <script src="node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
     
 </body>
 </html>

@@ -50,21 +50,19 @@
                 <a href="#about-me">
                     <span>Sobre mí</span>
                 </a>
-            </div>
-            
-        
-                
+            </div>    
             
         </div>
     </header>
+
 
     <!-- Sección de Portafolio -->
     <section class="briefcase" id="briefcase">
         <div class="briefcase-section container">
             <h2><span>Portafolio</span></h2>
             <div class="briefcase-grid">
-                <div><img src="img/Gestor de archivos.png" alt=""></div>
-                <div><img src="img/Portafoli.png" alt=""></div>
+                <div><a data-modal-id="gestor"><img src="img/Gestor de archivos.png" alt=""></a></div>
+                <div><a data-modal-id="portafolio"><img src="img/Portafoli.png" alt=""></a></div>
             </div>
         </div>
     </section>
@@ -109,6 +107,7 @@
         </div>
     </section>
 
+
     <!-- Sección de Sobre mi -->
     <section class="about" id="about-me">
         <div class="about-flex container">
@@ -126,6 +125,49 @@
             </div>
         </div>
     </section>
+
+
+
+                   <!-- MODALS -->
+
+    <!-- Modal Gestor -->
+    <div id="gestor" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+                <div class="pw-content">
+                    <div class="eins-modal-preview">
+                        <img src="img/Gestor de archivos.png" alt="">
+                    </div>
+                    <div class="eins-modal-text">
+                        <p>Descripción</p>
+                    </div>
+                    <div class="eins-modal-text-2">
+                        <span>ENLACE:</span>
+                       <a href=" https://arturohernandezwolbrie.com.mx/Plataforma/index.php">
+                        https://arturohernandezwolbrie.com.mx/Plataforma/index.php
+                       </a>
+                    </div>
+                    <div class="eins-modal-text-2">
+                        <span>Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="img/html-icon.png" alt="">
+                            <img src="img/css-icon.png" alt="">
+                            <img src="img/js-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- Modal Portafolio -->
+    <div id="portafolio" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            EJEMPLO DE PRUEBA
+
+            <button class="eins-modal-close-button">OK</button>
+        </div>
+    </div>
 
 
     <script src="node_modules/eins-modal/dist/js/eins-modal.min.js"></script>

@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="style.css">
+
     
     <!-- Dependencias-->
     <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -138,16 +140,14 @@
                     <div class="eins-modal-preview">
                         <img src="img/Gestor de archivos.png" alt="">
                     </div>
-                    <div class="eins-modal-text">
+                  <div class="eins-modal-text">
                         <p>Descripción</p>
-                    </div>
+                    
                     <div class="eins-modal-text-2">
-                        <span>ENLACE:</span>
-                       <a href=" https://arturohernandezwolbrie.com.mx/Plataforma/index.php">
-                        https://arturohernandezwolbrie.com.mx/Plataforma/index.php
+                        <span>ENLACE: </span><a href=" https://arturohernandezwolbrie.com.mx/Plataforma/index.php">https://arturohernandezwolbrie.com.mx/Plataforma/index.php
                        </a>
                     </div>
-                    <div class="eins-modal-text-2">
+                    <div class="eins-modal-text-3">
                         <span>Tecnologías Usadas:</span>
                         <div class="eins-modal-tec">
                             <img src="img/html-icon.png" alt="">
@@ -155,6 +155,7 @@
                             <img src="img/js-icon.png" alt="">
                         </div>
                     </div>
+                  </div>
                 </div>
         </div>
     </div>

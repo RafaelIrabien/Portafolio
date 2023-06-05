@@ -297,3 +297,56 @@ section.skills {
 .social img:hover {
     transform: scale(1.2);
 }
+
+
+
+/* Modals */
+.eins-modal-content {
+    max-width: 1000px;
+    background-color: var(--dark1);
+}
+
+.pw-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+}
+
+.eins-modal-preview {
+    width: 300px;
+    /*height: 350px;*/
+    margin: 0 auto;
+}
+
+.eins-modal-preview img {
+    width: 100%;
+    height: 100%;
+    /*0 arriba, 50 a la derecha, 20 abajo y 0 a la izquierda*/
+    padding: 0 50px 20px 0;
+}
+
+.eins-modal-text p {
+    font-size: 1.1rem;
+}
+
+.eins-modal-text-2 {
+    /*50 arriba, 0 a los lados, 10 abajo*/
+    padding: 50px 0 10px;
+}
+
+.eins-modal-text-2 a {
+    color: var(--secondary);
+    margin: 5px;
+}
+
+.eins-modal-text-3 {
+
+}
+
+.eins-modal-tec {
+   
+}
+
+.eins-modal-tec img {
+    width: 50px;
+    height: 50px;
+}

@@ -49,7 +49,7 @@
             <div class="contact-icon">
                 <a href="https://github.com/RafaelIrabien/" target="_blank"><img src="img/github.svg" alt=""></a>
                 <a href=""><img src="img/linkedin.svg" alt=""></a>
-                <a href=""><img src="img/message.svg" alt=""></a>
+                <a data-modal-id="message"><img src="img/message.svg" alt=""></a>
             </div>
 
             <div class="square-text3">
@@ -137,7 +137,7 @@
             <div class="social">
                 <a href=""><img src="img/github.svg" alt=""></a>
                 <a href=""><img src="img/linkedin.svg" alt=""></a>
-                <a href=""><img src="img/message.svg" alt=""></a>
+                <a data-modal-id="message"><img src="img/message.svg" alt=""></a>
             </div>
         </div>
     </section>
@@ -183,6 +183,31 @@
             EJEMPLO DE PRUEBA
 
             <button class="eins-modal-close-button">OK</button>
+        </div>
+    </div>
+
+
+
+    <!-- Formulario -->
+    <div id="message" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            
+            <form action="https://formspree.io/f/xrgvwljv" method="POST">
+                <label>
+                    Tu Correo Electrónico:
+                    <input type="email" name="email">
+                </label>
+
+                <label>
+                    Tu Mensaje:
+                    <textarea name="message"></textarea>
+                </label>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+           
         </div>
     </div>
 

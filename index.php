@@ -15,17 +15,21 @@
 <body>
 
     <header>
-        <div class="hero">
-          <div class="container">
-            <div class="navbar">
+    <div class="navbar">
                 <nav>
                     <ul>
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="">Portafolio</a></li>
-                        <li><a href="">Sobre mí</a></li>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#briefcase">Portafolio</a></li>
+                        <li><a href="#about-me">Sobre mí</a></li>
                     </ul>
                 </nav>
             </div>
+    </header>
+
+    <section>
+        <div class="hero" id="inicio">
+          <div class="container">
+            
 
             <img src="img/fondo_header.jpg" alt="">
         </div>
@@ -43,7 +47,7 @@
             <div class="square-text">Rafael Antonio Irabien Criollo</div>
             <div class="square-text2"><span>ING. Desarrollo y Gestión de Software</span></div>
             <div class="contact-icon">
-                <a href=""><img src="img/github.svg" alt=""></a>
+                <a href="https://github.com/RafaelIrabien/" target="_blank"><img src="img/github.svg" alt=""></a>
                 <a href=""><img src="img/linkedin.svg" alt=""></a>
                 <a href=""><img src="img/message.svg" alt=""></a>
             </div>
@@ -55,7 +59,7 @@
             </div>    
             
         </div>
-    </header>
+    </section>
 
 
     <!-- Sección de Portafolio -->
@@ -89,6 +93,16 @@
                 <div>
                     <img src="img/js-icon.png" alt="">
                     <h3>JavaScript</h3>
+                </div>
+
+                <div>
+                    <img id="PHP" src="img/php2.png" alt="">
+                    <h3>PHP</h3>
+                </div>
+
+                <div>
+                    <img id="MYSQL" src="img/mysql.png" alt="">
+                    <h3>MySQL</h3>
                 </div>
             </div>
         </div>
@@ -153,6 +167,8 @@
                             <img src="img/html-icon.png" alt="">
                             <img src="img/css-icon.png" alt="">
                             <img src="img/js-icon.png" alt="">
+                            <img id="php" src="img/php2.png" alt="">
+                            <img id="mysql" src="img/mysql.png" alt="">
                         </div>
                     </div>
                   </div>

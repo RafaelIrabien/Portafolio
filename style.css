@@ -9,6 +9,14 @@ body {
     color: var(--secondary);
 }
 
+header {
+    background-color: var(--dark2);
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    padding: 10px 0;
+}
+
 /*Hacemos responsive la pagina*/
 .container {
     max-width: 1200px;
@@ -31,6 +39,7 @@ que utilizará la página */
     /*Posicionamos los elementos a la esquina derecha */
     display: flex;
     justify-content: flex-end;
+    
 }
 
 .navbar ul {
@@ -220,6 +229,14 @@ section.skills {
     width: 90px;
 }
 
+#PHP {
+    width: 110px;
+}
+
+#MYSQL {
+    width: 110px;
+}
+
 .knowledge {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(110px,auto));
@@ -308,18 +325,18 @@ section.skills {
 
 .pw-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(370px,auto));
 }
 
 .eins-modal-preview {
-    width: 300px;
-    /*height: 350px;*/
+    max-width: 350px;
+    width: 90%;
     margin: 0 auto;
+  
 }
 
 .eins-modal-preview img {
     width: 100%;
-    height: 100%;
     /*0 arriba, 50 a la derecha, 20 abajo y 0 a la izquierda*/
     padding: 0 50px 20px 0;
 }
@@ -349,4 +366,16 @@ section.skills {
 .eins-modal-tec img {
     width: 50px;
     height: 50px;
+    margin: 2px;
+}
+
+ #php{
+    width: 70px;
+    height: 70px;
+    /*Alinear la imagen en medio*/
+    vertical-align: -10px;
+}
+
+#mysql {
+    width: 70px;
 }

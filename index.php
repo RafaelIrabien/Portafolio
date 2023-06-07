@@ -188,12 +188,13 @@
 
 
 
+
     <!-- Formulario -->
     <div id="message" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
         <div class="eins-modal-content">
             <div class="eins-modal-close"></div>
             
-            <form action="https://formspree.io/f/xrgvwljv" method="POST">
+            <form action="https://formspree.io/f/xrgvwljv" method="POST" class="form">
                 <label>
                     Tu Correo Electrónico:
                     <input type="email" name="email">

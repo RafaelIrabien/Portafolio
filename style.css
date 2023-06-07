@@ -379,3 +379,47 @@ section.skills {
 #mysql {
     width: 70px;
 }
+
+
+
+/* contact form */
+form {
+    max-width: 400px;
+    display: flex;
+    /*Que los elementos esten uno abajo del otro*/
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.form>label>input {
+    background-color: var(--dark2);
+    border-radius: 10px;
+    /* 10px arriba y abajo, 60px a los lados*/
+    padding: 10px 60px;
+    color: var(--secondary);
+    /* Desaparecer hover del borde por defecto */
+    outline: none;
+    opacity: .7;
+    width: 100%;
+}
+
+.form>label>textarea {
+    background-color: var(--dark2);
+    border-radius: 10px;
+    padding: 50px;
+    color: var(--secondary);
+    outline: none;
+    opacity: .7;
+    width: 100%;
+}
+
+label {
+    padding: 5px;
+}
+
+.form>button {
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 10px;
+    padding: 10px;
+}

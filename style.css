@@ -213,7 +213,7 @@ section.skills {
 .skill {
     padding: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
     justify-content: center;
     gap: 170px;
     width: 90%;
@@ -239,14 +239,14 @@ section.skills {
 
 .knowledge {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(110px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(110px,auto));
     justify-content: center;
     gap: 25px;
 }
 
 .tools {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(70px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(70px,auto));
     justify-content: center;
     gap: 50px;
 }
@@ -343,6 +343,10 @@ section.skills {
 
 .eins-modal-text p {
     font-size: 1.1rem;
+}
+
+.eins-modal-text li {
+    margin-left: 20px;
 }
 
 .eins-modal-text-2 {

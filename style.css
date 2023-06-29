@@ -39,8 +39,42 @@ que utilizará la página */
     /*Posicionamos los elementos a la esquina derecha */
     display: flex;
     justify-content: flex-end;
-    
 }
+
+
+
+/* Icono para cambiar el tema */
+.theme-toggler {
+    position: absolute;
+    top: 30px;
+    right: 500px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .theme-toggler::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #333;
+    z-index: -1;
+  }
+
+.theme-toggler.active{
+    color: white;
+}
+
+.theme-toggler.active::before {
+    background-color: black;
+  }
+
+
+
+
 
 .navbar ul {
     display: flex;
@@ -90,6 +124,7 @@ que utilizará la página */
     opacity: 0.7;
     z-index: 10;
     top: 70px;
+    border-radius: 10px;
 }
 
 .circle-trans {
@@ -213,42 +248,47 @@ section.skills {
 .skill {
     padding: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(340px,auto));
     justify-content: center;
-    gap: 170px;
+    gap: 100px;
     width: 90%;
     margin: 0 auto;
     padding-bottom: 110px;
+    
 }
 
 .skill h2 {
     padding-bottom: 60px;
+    text-align: center;
 }
 
 .skill img {
     width: 90px;
 }
 
-#PHP {
+.skill #PHP {
     width: 110px;
+   
 }
 
-#MYSQL {
+.skill #MYSQL {
     width: 110px;
+    
 }
 
 .knowledge {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(110px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(70px,auto));
     justify-content: center;
     gap: 25px;
+   
 }
 
 .tools {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(70px,auto));
     justify-content: center;
-    gap: 50px;
+    gap: 25px;
 }
 
 
@@ -427,3 +467,44 @@ label {
     border-radius: 10px;
     padding: 10px;
 }
+
+
+
+
+/*Tema dark*/
+.portafolio.dark header{
+    background-color: var(--primary);
+}
+
+.portafolio.dark .navbar a {
+        font-size: 1.5rem;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        margin: 20px;
+   
+}
+
+.portafolio.dark .navbar a:hover {
+    border-bottom: var(--primary) solid;
+}
+
+.portafolio.dark .hero {
+    background-color: var(--secondary);
+    position: relative;
+}
+
+.portafolio.dark .square {
+    background-color: var(--secondary);
+}
+
+.portafolio.dark .circle-trans {
+    border: solid 30px var(--secondary-light);
+}
+        
+        
+.portafolio.dark .circle {
+    border: solid 15px var(--secondary-light);
+}
+
+  

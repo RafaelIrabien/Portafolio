@@ -29,6 +29,9 @@ header {
 que utilizará la página */
 :root {
     --primary: #18c4db;
+    --primary2: #00245e;
+    --primary3: #e2ffda;
+    --primary4: #0044a0;
     --secondary: white;
     --secondary-light: rgb(173, 173, 173);
     --dark1: #222222;
@@ -60,7 +63,7 @@ que utilizará la página */
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color: #333;
+    background-color: #fff;
     z-index: -1;
   }
 
@@ -159,7 +162,8 @@ que utilizará la página */
 
 
 .square-text {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
+    font-weight: bold;
     color: var(--secondary);
     top: 380px;
     z-index: 11;
@@ -167,13 +171,16 @@ que utilizará la página */
 
 .square-text2 {
     font-size: 1.2rem;
+    font-weight: bold;
     color: var(--secondary);
     top: 418px;
     z-index: 11;
 }
 
 .square-text3 {
+    margin-top: 5px;
     font-size: 1.3rem;
+    font-weight: bold;
     color: var(--secondary);
     top: 490px;
     z-index: 11;
@@ -195,7 +202,7 @@ que utilizará la página */
 
 .contact-icon img {
     width: 40px;
-    margin: 0 10px;
+    margin: 2px 10px;
 }
 
 .contact-icon img:hover {
@@ -375,10 +382,23 @@ section.skills {
   
 }
 
+.eins-modal-close {
+    color: var(--secondary);
+    border: 0px;
+}
+
+.eins-modal-close:hover {
+    color: var(--secondary);
+}
+
 .eins-modal-preview img {
     width: 100%;
     /*0 arriba, 50 a la derecha, 20 abajo y 0 a la izquierda*/
     padding: 0 50px 20px 0;
+}
+
+.eins-modal-text span {
+    font-weight: bold;
 }
 
 .eins-modal-text p {
@@ -436,6 +456,8 @@ form {
 }
 
 .form>label>input {
+    font-family: 'Ebrima';
+    font-size: 16px;
     background-color: var(--dark2);
     border-radius: 10px;
     /* 10px arriba y abajo, 60px a los lados*/
@@ -448,6 +470,8 @@ form {
 }
 
 .form>label>textarea {
+    font-family: 'Ebrima';
+    font-size: 16px;
     background-color: var(--dark2);
     border-radius: 10px;
     padding: 50px;
@@ -473,38 +497,142 @@ label {
 
 /*Tema dark*/
 .portafolio.dark header{
-    background-color: var(--primary);
+    background-color: var(--primary2);
 }
 
 .portafolio.dark .navbar a {
         font-size: 1.5rem;
         padding: 10px;
         text-decoration: none;
-        color: black;
+        color: var(--primary3);
         margin: 20px;
    
 }
 
 .portafolio.dark .navbar a:hover {
-    border-bottom: var(--primary) solid;
+    border-bottom: var(--primary3) solid;
 }
 
 .portafolio.dark .hero {
-    background-color: var(--secondary);
+    background-color: var();
     position: relative;
 }
 
 .portafolio.dark .square {
-    background-color: var(--secondary);
+    background-color: var(--primary3);
 }
 
 .portafolio.dark .circle-trans {
-    border: solid 30px var(--secondary-light);
+    border: solid 30px var(--primary4);
 }
         
         
 .portafolio.dark .circle {
-    border: solid 15px var(--secondary-light);
+    border: solid 15px var(--primary4);
 }
 
-  
+.portafolio.dark .square-text {
+    color: var(--dark2);
+}
+
+.portafolio.dark .square-text2 {
+    color: var(--primary4);
+}
+
+.portafolio.dark .square-text3 {
+    color: var(--primary4);
+}
+
+.portafolio.dark .square-text3:hover {
+    border-bottom: var(--primary4) solid;
+}
+
+.portafolio.dark .square-text3 a{
+    color: var(--secondary);
+}
+
+.portafolio.dark span {
+    color: var(--primary4);
+}
+
+/* Briefcase */
+.portafolio.dark .briefcase {
+    background-color: var(--primary3);
+}
+
+/* Skills */
+.portafolio.dark section.skills {
+    background-color: var(--primary3);
+}
+
+/* efectos de tooltips */
+.portafolio.dark .skill h3 {
+    background-color: var(--dark1);
+    color: var(--secondary);
+}
+
+
+
+/* about */
+.portafolio.dark .about {
+    background-color: var(--primary2);
+}
+
+.portafolio.dark .about p {
+    color: var(--secondary);
+}
+
+.portafolio.dark social {
+    border-left: var(--secondary) 5px solid;
+}
+
+/* Modals */
+.portafolio.dark .eins-modal-content {
+    background-color: var(--primary3);
+}
+
+.portafolio.dark .eins-modal-close {
+    color: var(--dark2);
+    border: 0px;
+}
+
+.portafolio.dark .eins-modal-close:hover {
+    color: var(--dark2);
+}
+
+.portafolio.dark .eins-modal-text p {
+    color: var(--dark2);
+}
+
+.portafolio.dark .eins-modal-text li {
+    color: var(--dark2);
+}
+
+.portafolio.dark .eins-modal-text-2 a {
+    color: var(--dark2);
+}
+
+.portafolio.dark .form>label {
+    color: var(--dark2);
+}
+
+.portafolio.dark .form>label>input {
+    background-color: var(--secondary);
+    color: var(--dark2);
+}
+
+.portafolio.dark .form>label>textarea {
+    background-color: var(--secondary);
+    color: var(--dark2);
+}
+
+.portafolio.dark .form>button {
+    background-color: var(--primary4);
+    color: var(--secondary);
+}
+
+.portafolio.dark .contact-icon {
+    background-color: var(--dark1);
+    border-radius: 10px;
+}
+

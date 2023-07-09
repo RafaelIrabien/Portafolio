@@ -378,7 +378,6 @@ section.skills {
     max-width: 450px;
     width: 100%;
     margin: 0 auto;
-  
 }
 
 .eins-modal-close {
@@ -390,12 +389,73 @@ section.skills {
     color: var(--secondary);
 }
 
+
+
+/* Slider */
+.eins-modal-preview {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    /*Ocultamos las imagenes que se salen*/
+    overflow: hidden;
+    box-shadow: 0 0 0 10px var(--secondary);
+    position: relative;
+}
+
+.slider {
+    /*Ponemos las imagenes a lado de la otra con flex*/
+    display: flex;
+    width: 2400%;
+    height: 400px;
+}
+
+.slider__section {
+    width: 100%;
+}
+
+.slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /*Para que las imagenes no se estiren*/
+    object-fit: cover;
+}
+
+.slider__btn {
+    color: var(--dark2);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__btn:hover {
+    background-color: var(--secondary);
+}
+
+.slider__btn--left {
+    left: 10px;
+}
+
+.slider__btn--right {
+    right: 10px;
+}
+
 .eins-modal-preview img {
     width: 100%;
     /*0 arriba, 0 a la derecha, 20 abajo y 0 a la izquierda*/
-    padding: 0 0 19px 0;
+    padding: 0 0 0 0;
     align-items: center;
 }
+
+
 
 .eins-modal-text span {
     font-weight: bold;
@@ -587,6 +647,8 @@ label {
 .portafolio.dark social {
     border-left: var(--secondary) 5px solid;
 }
+
+
 
 /* Modals */
 .portafolio.dark .eins-modal-content {

@@ -366,18 +366,17 @@ section.skills {
 
 /* Modals */
 .eins-modal-content {
-    max-width: 1000px;
+    max-width: 900px;
     background-color: var(--dark1);
 }
 
 .pw-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(370px,auto));
+   
 }
 
 .eins-modal-preview {
-    max-width: 350px;
-    width: 90%;
+    max-width: 450px;
+    width: 100%;
     margin: 0 auto;
   
 }
@@ -393,8 +392,9 @@ section.skills {
 
 .eins-modal-preview img {
     width: 100%;
-    /*0 arriba, 50 a la derecha, 20 abajo y 0 a la izquierda*/
-    padding: 0 50px 20px 0;
+    /*0 arriba, 0 a la derecha, 20 abajo y 0 a la izquierda*/
+    padding: 0 0 19px 0;
+    align-items: center;
 }
 
 .eins-modal-text span {
@@ -402,6 +402,8 @@ section.skills {
 }
 
 .eins-modal-text p {
+    text-align: center;
+    font-weight: bold;
     font-size: 1.1rem;
 }
 
@@ -411,7 +413,7 @@ section.skills {
 
 .eins-modal-text-2 {
     /*50 arriba, 0 a los lados, 10 abajo*/
-    padding: 50px 0 10px;
+    padding: 25px 0 10px;
 }
 
 .eins-modal-text-2 a {

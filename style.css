@@ -407,6 +407,8 @@ section.skills {
     display: flex;
     width: 2400%;
     height: 400px;
+    /*Enfocamos la primera imagen*/
+    margin-left: -100%;
 }
 
 .slider__section {

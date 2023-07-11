@@ -54,17 +54,18 @@ que utilizará la página */
     color: #fff;
     cursor: pointer;
     z-index: 1;
+    top: 13px;
   }
   .theme-toggler::before {
     content: "";
     position: absolute;
-    width: 30px;
+    width: 70px;
     height: 30px;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
+    border-radius: 50px;
     background-color: #fff;
+    border: 1px solid var(--primary3);
     z-index: -1;
+   
   }
 
 .theme-toggler.active{
@@ -75,8 +76,40 @@ que utilizará la página */
     background-color: black;
   }
 
+.radio-inner {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    background-color: #ffc207;
+    border-radius: 50%;
+    transition: all 0.5s;
+    overflow: hidden;
+    top: 3px;
+    left: 3px;
+  }
 
+.theme-toggler .radio-inner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all 0.5s;
+}
 
+.radio-inner.active {
+    transform: translateX(calc(70px - 30px));
+}
+
+.radio-inner.active::before {
+    left: -43%;
+    transform: scale(1);
+}
 
 
 .navbar ul {

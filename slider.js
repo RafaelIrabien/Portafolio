@@ -52,10 +52,11 @@ btnLeft.addEventListener('click', function() {
 });
 
 
-
-/* Slider Automático */
+/*
+// Slider Automático 
 //setInterval es para que se ejecute algo cada cierto tiempo
 setInterval(function() {
     //Avanzará a la derecha cada 5 segundos
     Next();
 }, 6000);
+*/

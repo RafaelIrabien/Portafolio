@@ -7,7 +7,8 @@
     <title>Portafolio</title>
 
     <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
 
 </head>
 <body>
@@ -21,14 +22,14 @@
                             <div class="radio-inner"></div>
                         </div>
                         <ul>
-                            <li><a href="#inicio">Inicio</a></li>
-                            <li><a href="#briefcase">Portafolio</a></li>
-                            <li><a href="#about-me">Sobre mí</a></li>
+                            <li><a href="#inicio" class="icon-link"><i class="fa-solid fa-house"></i> <span>Inicio</span></a></li>
+                            <li><a href="#briefcase" class="icon-link"><i class="fa-solid fa-briefcase"></i> <span>Portafolio</span></a></li>
+                            <li><a href="#about-me" class="icon-link"><i class="fa-solid fa-user"></i> <span>Sobre mí</span></a></li>
                         </ul>
                     </nav>
-                </div>
+        </div>
         </header>
-    
+        
         <section>
             <div class="hero" id="inicio">
               <div class="container">
@@ -63,9 +64,11 @@
             </div>
         </section>
     
-    
+        
         <!-- Sección de Portafolio -->
-        <section class="briefcase" id="briefcase">
+        <div id="briefcase"> <br></div>
+       
+        <section class="briefcase">
             <div class="briefcase-section container">
                 <h2><span>Portafolio</span></h2>
                 <div class="briefcase-grid">
@@ -308,8 +311,13 @@
     
 </div>
 
+   <!-- Enlace de los iconos-->
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
    <script src="node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
-   <script src="tema.js"></script>
-   <script src="slider.js"></script>
+   <script src="./js/tema.js"></script>
+   <script src="./js/slider.js"></script>
 </body>
 </html>

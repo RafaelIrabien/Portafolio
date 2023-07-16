@@ -131,6 +131,7 @@ que utilizará la página */
 }
 
 .navbar .icon-link span{
+    color: var(--secondary);
     display: none; /* Oculta el icono al pasar el cursor */
 }
 
@@ -428,12 +429,6 @@ section.skills {
    
 }
 
-.eins-modal-preview {
-    max-width: 450px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 .eins-modal-close {
     color: var(--secondary);
     border: 0px;
@@ -449,11 +444,12 @@ section.skills {
 .eins-modal-preview {
     width: 100%;
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
     /*Ocultamos las imagenes que se salen*/
     overflow: hidden;
-    box-shadow: 0 0 0 10px var(--secondary);
+    box-shadow: 0 0 0 5px var(--secondary);
     position: relative;
+    border-radius: 5px;
 }
 
 .slider {
@@ -558,7 +554,7 @@ section.skills {
 
 /* contact form */
 form {
-    max-width: 400px;
+    max-width: 500px;
     display: flex;
     /*Que los elementos esten uno abajo del otro*/
     flex-direction: column;
@@ -570,13 +566,15 @@ form {
     font-size: 16px;
     background-color: var(--dark2);
     border-radius: 10px;
-    /* 10px arriba y abajo, 60px a los lados*/
-    padding: 10px 60px;
+    /* 10px arriba y abajo, 10px a los lados*/
+    padding: 10px 10px;
     color: var(--secondary);
     /* Desaparecer hover del borde por defecto */
     outline: none;
-    opacity: .7;
+    opacity: .6;
     width: 100%;
+    justify-content: flex-end;
+    border: 1px solid var(--secondary-light);
 }
 
 .form>label>textarea {
@@ -584,11 +582,13 @@ form {
     font-size: 16px;
     background-color: var(--dark2);
     border-radius: 10px;
-    padding: 50px;
+    padding: 20px;
     color: var(--secondary);
     outline: none;
     opacity: .7;
     width: 100%;
+    justify-content: flex-end;
+    border: 1px solid var(--secondary-light);
 }
 
 label {
@@ -600,6 +600,14 @@ label {
     color: var(--secondary);
     border-radius: 10px;
     padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    margin: auto;
+    border: 1px solid var(--secondary-light);
+}
+
+.form>button:hover {
+    background-color: #20a5b7; 
 }
 
 
@@ -734,6 +742,14 @@ label {
     color: var(--dark2);
 }
 
+/* Slider */
+.portafolio.dark .eins-modal-preview {
+    box-shadow: 0 0 0 5px var(--dark2);
+}
+
+
+/* Formulario */
+
 .portafolio.dark .form>label {
     color: var(--dark2);
 }
@@ -741,20 +757,26 @@ label {
 .portafolio.dark .form>label>input {
     background-color: var(--secondary);
     color: var(--dark2);
+    border: 1px solid var(--dark1);
 }
 
 .portafolio.dark .form>label>textarea {
     background-color: var(--secondary);
     color: var(--dark2);
+    border: 1px solid var(--dark1);
 }
 
 .portafolio.dark .form>button {
     background-color: var(--primary4);
     color: var(--secondary);
+    border: 1px solid var(--dark1);
+}
+
+.portafolio.dark .form>button:hover {
+    background-color: #0c3f87;
 }
 
 .portafolio.dark .contact-icon {
     background-color: var(--dark1);
     border-radius: 10px;
 }
-

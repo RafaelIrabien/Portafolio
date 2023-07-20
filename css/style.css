@@ -133,11 +133,13 @@ que utilizará la página */
 .navbar .icon-link span{
     color: var(--secondary);
     display: none; /* Oculta el icono al pasar el cursor */
+    
 }
 
 .navbar .icon-link:hover span{
     display: contents;
     color: var(--dark2);
+    
 }
 
 .navbar a:hover {
@@ -462,6 +464,8 @@ section.skills {
     margin-left: -100%;
 }
 
+
+
 .slider__section {
     width: 100%;
 }
@@ -500,6 +504,57 @@ section.skills {
 .slider__btn--right {
     right: 10px;
 }
+
+
+.slider2 {
+    /*Ponemos las imagenes a lado de la otra con flex*/
+    display: flex;
+    width: 600%;
+    /*
+    height: 400px;*/
+    /*Enfocamos la primera imagen*/
+    margin-left: -100%;
+}
+
+.slider__section2 {
+    width: 100%;
+}
+
+.slider__img2 {
+    display: block;
+    width: 100%;
+    /*Para que las imagenes no se estiren*/
+    object-fit: cover;
+    
+}
+
+.slider__btn2 {
+    color: var(--dark2);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__btn2:hover {
+    background-color: var(--secondary);
+}
+
+.slider__btn--left2 {
+    left: 10px;
+}
+
+.slider__btn--right2 {
+    right: 10px;
+}
+
 
 .eins-modal-preview img {
     width: 100%;

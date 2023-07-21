@@ -17,6 +17,7 @@ header {
     padding: 10px 0;
     border-radius: 0 0 10px 10px;
     border-bottom: 0.5px solid var(--secondary);
+    transition: 0.5s;
 }
 
 /*Hacemos responsive la pagina*/
@@ -53,7 +54,7 @@ que utilizará la página */
 .theme-toggler {
     position: absolute;
     top: 30px;
-    right: 600px;
+    right: 530px;
     color: #fff;
     cursor: pointer;
     z-index: 1;
@@ -68,7 +69,7 @@ que utilizará la página */
     background-color: #fff;
     border: 1px solid var(--primary3);
     z-index: -1;
-   
+    transition: 0.5s;
   }
 
 .theme-toggler.active{
@@ -153,6 +154,7 @@ que utilizará la página */
 .hero {
     background-color: var(--dark2);
     position: relative;
+    transition: 0.5s;
 }
 
 .hero img {
@@ -175,12 +177,59 @@ que utilizará la página */
 
 .square {
     width: 420px;
-    height: 460px;
+    height: 465px;
     background-color: var(--dark1);
     opacity: 0.7;
     z-index: 10;
     top: 70px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Ocultamos las luces que salen del cuadro*/
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.square::before {
+    content: '';
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background-image: conic-gradient(transparent, transparent, transparent, var(--primary));
+    animation: animate 4s linear infinite;
+    transition: 0.5s;
+}
+
+.square::after {
+    content: '';
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background-image: conic-gradient(transparent, transparent, transparent, var(--primary));
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+    transition: 0.5s;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 0 0 3000px var(--primary);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 3000px var(--primary);
+    }
+}
+
+.square span {
+    position: absolute;
+    inset: 5px;
+    background-color: var(--dark1);
+    border-radius: 6px;
+    z-index: 1;
 }
 
 .circle-trans {
@@ -191,6 +240,7 @@ que utilizará la página */
     opacity: .2;
     z-index: 19;
     top: 90px;
+    transition: 0.5s;
 }
 
 .circle {
@@ -200,6 +250,7 @@ que utilizará la página */
     border: solid 15px var(--primary);
     z-index: 21;
     top: 120px;
+    transition: 0.5s;
 }
 
 .profile-img {
@@ -220,6 +271,7 @@ que utilizará la página */
     color: var(--secondary);
     top: 380px;
     z-index: 11;
+    transition: 0.5s;
 }
 
 .square-text2 {
@@ -228,6 +280,11 @@ que utilizará la página */
     color: var(--secondary);
     top: 418px;
     z-index: 11;
+    transition: 0.5s;
+}
+
+.message {
+    cursor: pointer;
 }
 
 .square-text3 {
@@ -237,6 +294,7 @@ que utilizará la página */
     color: var(--secondary);
     top: 490px;
     z-index: 11;
+    transition: 0.5s;
 }
 
 .square-text3:hover {
@@ -246,6 +304,7 @@ que utilizará la página */
 .square-text3 a{
     text-decoration: none;
     color: var(--secondary);
+    transition: 0.5s;
 }
 
 .contact-icon {
@@ -265,16 +324,19 @@ que utilizará la página */
 
 span {
     color: var(--primary);
+    transition: 0.5s;
 }
 
 
 /* Briefcase */
 #briefcase {
     background: var(--dark1);
+    transition: 0.5s;
 }
 
 .briefcase {
     background-color: var(--dark1);
+    transition: 0.5s;
 }
 
 .briefcase-section h2 {
@@ -307,6 +369,7 @@ span {
 /* Skills */
 section.skills {
     background-color: var(--dark1);
+    transition: 0.5s;
 }
 
 .skill {
@@ -345,7 +408,6 @@ section.skills {
     grid-template-columns: repeat(auto-fit,minmax(70px,auto));
     justify-content: center;
     gap: 25px;
-   
 }
 
 .tools {
@@ -385,6 +447,7 @@ section.skills {
 /* about */
 .about {
     background-color: var(--dark2);
+    transition: 0.5s;
 }
 
 .about-flex {
@@ -403,6 +466,7 @@ section.skills {
     /*Separación entre lineas*/
     line-height: 2.5rem;
     color: var(--secondary-light);
+    transition: 0.5s;
 }
 
 .social {
@@ -425,10 +489,6 @@ section.skills {
 .eins-modal-content {
     max-width: 900px;
     background-color: var(--dark1);
-}
-
-.pw-content {
-   
 }
 
 .eins-modal-close {
@@ -525,7 +585,6 @@ section.skills {
     width: 100%;
     /*Para que las imagenes no se estiren*/
     object-fit: cover;
-    
 }
 
 .slider__btn2 {
@@ -702,6 +761,18 @@ label {
 
 .portafolio.dark .square {
     background-color: var(--primary3);
+}
+
+.portafolio.dark .square::before {
+background-image: conic-gradient(transparent, transparent, transparent, var(--primary4));
+}
+
+.portafolio.dark .square::after {
+background-image: conic-gradient(transparent, transparent, transparent, var(--primary4));
+}
+
+.portafolio.dark .square span {
+background-color: var(--primary3);
 }
 
 .portafolio.dark .circle-trans {

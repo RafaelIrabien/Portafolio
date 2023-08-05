@@ -53,12 +53,11 @@ que utilizará la página */
 /* Icono para cambiar el tema */
 .theme-toggler {
     position: absolute;
-    top: 30px;
-    right: 530px;
+    top: 11px;
+    right: 628px;
     color: #fff;
     cursor: pointer;
     z-index: 1;
-    top: 13px;
   }
   .theme-toggler::before {
     content: "";
@@ -117,38 +116,52 @@ que utilizará la página */
 
 
 .navbar ul {
+    margin-right: 10px;
     display: flex;
     list-style: none;
-    gap: 70px;
+    gap: 13px;
 }
 
-.navbar .icon-link {
+.navbar .icon_link {
     position: relative;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     padding: 10px;
     text-decoration: none;
-    color: white;
-    margin: 20px;
+    color: var(--primary);
 }
-
-.navbar .icon-link span{
-    color: var(--secondary);
-    display: none; /* Oculta el icono al pasar el cursor */
-    
-}
-
-.navbar .icon-link:hover span{
-    display: contents;
+  
+.navbar .icon_link:hover {
+    background: var(--primary);
+    border-radius: 8px;
     color: var(--dark2);
-    
+    transition: 0.4s;
 }
 
-.navbar a:hover {
-    background-color: var(--primary);
-    transition: 0.7s;
-    border-radius: 10px;
-    color: var(--dark2);
-}
+/* Media Query para hacerlo responsivo */
+@media screen and (max-width: 640px) {
+    .navbar .icon_link {
+      font-size: 0; /* Ocultar texto */
+    }
+  
+    .navbar i {
+      font-size: 1.5rem; /* Mostrar solo iconos */
+      padding: 10px;
+    }
+
+    .navbar li:hover {
+        background: var(--primary);
+        border-radius: 8px;
+        color: var(--dark2);
+        transition: 0.2s;
+    }
+
+    .theme-toggler {
+        right: 350px;
+        top: 15px;
+    }
+  }
+
+
 
 
 .hero {
@@ -178,6 +191,7 @@ que utilizará la página */
 .square {
     width: 420px;
     height: 465px;
+    max-width: 420px;
     background-color: var(--dark1);
     opacity: 0.7;
     z-index: 10;
@@ -735,15 +749,14 @@ label {
     background-color: var(--primary2);
 }
 
-.portafolio.dark .navbar .icon-link {
+.portafolio.dark .navbar .icon_link {
         padding: 10px;
         text-decoration: none;
         color: var(--primary3);
-        margin: 20px;
-   
+       
 }
 
-.portafolio.dark .navbar .icon-link:hover span{
+.portafolio.dark .navbar .icon_link:hover {
     color: var(--primary4);
 }
 
@@ -751,6 +764,16 @@ label {
     background-color: var(--primary3);
     color: var(--primary4);
 }
+
+/* Media Query para hacerlo responsivo */
+@media screen and (max-width: 640px) {
+
+    .portafolio.dark .navbar li:hover {
+        background: var(--primary3);
+        color: var(--primary4);
+    }
+
+  }
 
 
  

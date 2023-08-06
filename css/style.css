@@ -137,33 +137,6 @@ que utilizará la página */
     transition: 0.4s;
 }
 
-/* Media Query para hacerlo responsivo */
-@media screen and (max-width: 640px) {
-    .navbar .icon_link {
-      font-size: 0; /* Ocultar texto */
-    }
-  
-    .navbar i {
-      font-size: 1.5rem; /* Mostrar solo iconos */
-      padding: 10px;
-    }
-
-    .navbar li:hover {
-        background: var(--primary);
-        border-radius: 8px;
-        color: var(--dark2);
-        transition: 0.2s;
-    }
-
-    .theme-toggler {
-        right: 350px;
-        top: 15px;
-    }
-  }
-
-
-
-
 .hero {
     background-color: var(--dark2);
     position: relative;
@@ -203,39 +176,6 @@ que utilizará la página */
     /*Ocultamos las luces que salen del cuadro*/
     overflow: hidden;
     transition: 0.5s;
-}
-
-.square::before {
-    content: '';
-    position: absolute;
-    width: 700px;
-    height: 700px;
-    background-image: conic-gradient(transparent, transparent, transparent, var(--primary));
-    animation: animate 4s linear infinite;
-    transition: 0.5s;
-}
-
-.square::after {
-    content: '';
-    position: absolute;
-    width: 700px;
-    height: 700px;
-    background-image: conic-gradient(transparent, transparent, transparent, var(--primary));
-    animation: animate 4s linear infinite;
-    animation-delay: -2s;
-    transition: 0.5s;
-}
-
-@keyframes animate {
-    0% {
-        transform: rotate(0deg);
-        box-shadow: 0 0 3000px var(--primary);
-    }
-
-    100% {
-        transform: rotate(360deg);
-        box-shadow: 3000px var(--primary);
-    }
 }
 
 .square span {
@@ -340,6 +280,82 @@ span {
     color: var(--primary);
     transition: 0.5s;
 }
+
+/* Media Query para hacerlo responsivo */
+@media screen and (max-width: 640px) {
+    .navbar .icon_link {
+      font-size: 0; /* Ocultar texto */
+    }
+  
+    .navbar i {
+      font-size: 1.5rem; /* Mostrar solo iconos */
+      padding: 10px;
+    }
+
+    .navbar li:hover {
+        background: var(--primary);
+        border-radius: 8px;
+        color: var(--dark2);
+        transition: 0.2s;
+    }
+
+    .theme-toggler {
+        right: 348px;
+        top: 15px;
+    }
+
+    .square {
+        width: 320px;
+        height: 365px;
+    }
+
+
+    .circle-trans {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: solid 30px var(--primary);
+    }
+    
+    .circle {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        border: solid 15px var(--primary);
+    }
+    
+    .profile-img img {
+        width: 102px;
+        height: 102px;
+    }
+    
+    .square-text {
+        font-size: 1.4rem;
+        top: 280px;
+    }
+    
+    .square-text2 {
+        font-size: 1rem;
+        top: 310px;
+    }
+    
+    .square-text3 {
+        margin-top: 5px;
+        font-size: 1.1rem;
+        top: 400px;
+    }
+    
+    .contact-icon {
+        top: 350px;
+    }
+    
+    .contact-icon img {
+        width: 30px;
+    }
+
+  }
+
+
 
 
 /* Briefcase */

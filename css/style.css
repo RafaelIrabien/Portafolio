@@ -128,6 +128,7 @@ que utilizará la página */
     padding: 10px;
     text-decoration: none;
     color: var(--primary);
+    transition: 0.5s;
 }
   
 .navbar .icon_link:hover {
@@ -678,6 +679,23 @@ section.skills {
 .eins-modal-text-2 a {
     color: var(--secondary);
     margin: 5px;
+    max-width: 400px;
+}
+
+.btn_enlace {
+    background: var(--primary);
+    padding: 5px 9px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn_enlace:hover {
+    background: #15b2c7;
+}
+
+.btn_enlace i {
+    font-size: 22px;
 }
 
 .eins-modal-tec img {
@@ -908,6 +926,18 @@ background-color: var(--primary3);
 
 .portafolio.dark .eins-modal-text-2 a {
     color: var(--dark2);
+}
+
+.portafolio.dark .btn_enlace {
+    background: var(--primary2);
+}
+
+.portafolio.dark .btn_enlace:hover {
+    background: #01368a;
+}
+
+.portafolio.dark .btn_enlace i {
+    color: var(--secondary);
 }
 
 /* Slider */

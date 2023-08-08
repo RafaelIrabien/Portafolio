@@ -64,6 +64,7 @@ setInterval(function() {
 
 
             /*Slider de Portafolio */
+            /**
 const slider2 = document.querySelector("#slider2");
 let sliderSection2 = document.querySelectorAll(".slider__section2");
 //Obtenemos la ultima imagen del slider2
@@ -107,8 +108,9 @@ function Prev2() {
        slider2.style.marginLeft = "-100%";
     }, 1000);
 }
-
+*/
 /*Asignamos las funciones a los botones con el evento click */
+/*
 btnRight2.addEventListener('click', function() {
     Next2();
 });
@@ -117,6 +119,7 @@ btnLeft2.addEventListener('click', function() {
     Prev2();
 });
 
+*/
 
 /*
 // Slider Automático 

@@ -2,15 +2,29 @@ const themeToggleBtn = document.querySelector(".theme-toggler");
 const inner = document.querySelector(".radio-inner");
 const portafolio = document.querySelector(".portafolio");
 
+let imagenes = ["img/fondo_header.jpg", "img/espacio.jpg"];
+let indiceActual = 0;
+
 let isDark = true;
+
+function cambiarRutaImagen() {
+  let imagen = document.querySelector(".fondo");
+  imagen.src = imagenes[indiceActual];
+
+  //Cambiar al siguiente índice o cambiar al primero si llegamos al final
+  indiceActual = (indiceActual + 1) % imagenes.length;
+}
 
 themeToggleBtn.onclick=()=>{
     portafolio.classList.toggle("dark");
     themeToggleBtn.classList.toggle("active");
     inner.classList.toggle("active");
-    isDark!=isDark;
+    return cambiarRutaImagen();
+    isDark!=isDark
+    
 }
 
+  
 
 /*
 // Esperar a que se cargue completamente el contenido del DOM

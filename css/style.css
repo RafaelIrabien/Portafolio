@@ -146,9 +146,10 @@ que utilizará la página */
 }
 
 .hero img {
+    border-radius: 30px;
     width: 100%;
     height: 530px;
-    opacity: 0.35;
+    /*opacity: 0.35;*/
 }
 
 
@@ -443,7 +444,106 @@ section.skills {
 
 
 /* Media Query para hacerlo responsivo */
+/*Media query para la imagen*/
+@media screen and (max-width: 940px) {
+    .hero img {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .hero img {
+        height: 470px;
+    }
+    .square {
+        width: 400px;
+        height: 445px;
+    }
+    .circle-trans {
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+        border: solid 30px var(--primary);
+    }
+    .circle {
+        width: 210px;
+        height: 210px;
+        border-radius: 50%;
+        border: solid 15px var(--primary);
+    }
+    .profile-img img {
+        width: 182px;
+        height: 182px;
+    }
+    .square-text {
+        font-size: 1.4rem;
+        top: 360px;
+    }
+    .square-text2 {
+        font-size: 1rem;
+        top: 390px;
+    }
+    .square-text3 {
+        margin-top: 5px;
+        font-size: 1.1rem;
+        top: 470px;
+    }
+    .contact-icon {
+        top: 430px;
+    }
+    .contact-icon img {
+        width: 30px;
+    }
+}
+@media screen and (max-width: 740px) {
+    .hero img {
+        height: 430px;
+    }
+    .square {
+        width: 370px;
+        height: 405px;
+    }
+    .circle-trans {
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        border: solid 30px var(--primary);
+    }
+    .circle {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: solid 15px var(--primary);
+    }
+    .profile-img img {
+        width: 162px;
+        height: 162px;
+    }
+    .square-text {
+        font-size: 1.4rem;
+        top: 335px;
+    }
+    .square-text2 {
+        font-size: 1rem;
+        top: 365px;
+    }
+    .square-text3 {
+        margin-top: 5px;
+        font-size: 1.1rem;
+        top: 440px;
+    }
+    .contact-icon {
+        top: 400px;
+    }
+    .contact-icon img {
+        width: 30px;
+    }
+}
 @media screen and (max-width: 640px) {
+    .hero img {
+        height: 400px;
+    }
+
     .navbar .icon_link {
       font-size: 0; /* Ocultar texto */
     }
@@ -472,32 +572,32 @@ section.skills {
 
 
     .circle-trans {
-        width: 190px;
-        height: 190px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
         border: solid 30px var(--primary);
     }
     
     .circle {
-        width: 130px;
-        height: 130px;
+        width: 140px;
+        height: 140px;
         border-radius: 50%;
         border: solid 15px var(--primary);
     }
     
     .profile-img img {
-        width: 102px;
-        height: 102px;
+        width: 110px;
+        height: 110px;
     }
     
     .square-text {
         font-size: 1.4rem;
-        top: 280px;
+        top: 290px;
     }
     
     .square-text2 {
         font-size: 1rem;
-        top: 310px;
+        top: 320px;
     }
     
     .square-text3 {
@@ -541,6 +641,7 @@ section.skills {
     }
 
   }
+
 
 
 

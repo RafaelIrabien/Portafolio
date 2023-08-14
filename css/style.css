@@ -15,8 +15,9 @@ header {
     top: 0;
     z-index: 30;
     padding: 10px 0;
-    border-radius: 0 0 10px 10px;
-    border-bottom: 0.5px solid var(--secondary);
+    /*border-radius: 0 0 10px 10px;
+    border-bottom: 0.5px solid var(--secondary); */
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.794);
     transition: 0.5s;
 }
 
@@ -26,19 +27,18 @@ header {
     margin: 0 auto;
 }
 
-
-
 /* Contiene todos los colores primarios y secundarios 
 que utilizará la página */
 :root {
     --primary: #18c4db;
     --primary2: #00245e;
-    --primary3: #e2ffda;
+    --primary3: #dcf4fd;
     --primary4: #0044a0;
     --secondary: white;
     --secondary-light: rgb(173, 173, 173);
     --dark1: #222222;
     --dark2: #050505;
+    --darkblue: #00031E;
     --yellow: #ffc207;
 }
 
@@ -162,6 +162,10 @@ que utilizará la página */
     /*Centramos y acomodamos los elementos */
     display: flex;
     justify-content: center;
+}
+
+.profile-img img{
+    filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.7));
 }
 
 .square {
@@ -306,7 +310,7 @@ span {
     tamaño de la pantalla*/
     grid-template-columns: repeat(auto-fit,minmax(290px,auto));
     /*Separamos las imagenes*/
-    gap: 15px;
+    gap: 18px;
     width: 90%;
     margin: 0 auto;
 }
@@ -315,6 +319,7 @@ span {
     width: 100%;
     border-radius: 10px;
     transition: transform 0.2s ease;
+    filter: drop-shadow(-2px 2px 8px rgba(0, 0, 0, 0.7));
 }
 
 
@@ -349,6 +354,7 @@ section.skills {
 
 .skill img {
     width: 90px;
+    filter: drop-shadow(-2px 2px 6px rgba(0, 0, 0, 0.7));
 }
 
 .skill #PHP {
@@ -911,6 +917,7 @@ label {
 /*Tema dark*/
 .portafolio.dark header{
     background-color: var(--primary2);
+    box-shadow: 0px 10px 10px -6px var(--dark1);
 }
 
 .portafolio.dark .navbar .icon_link {
@@ -942,7 +949,7 @@ label {
 
  
 .portafolio.dark .hero {
-    background-color: var();
+    background-color: var(--darkblue);
     position: relative;
 }
 

@@ -31,7 +31,7 @@ header {
 que utilizará la página */
 :root {
     --primary: #18c4db;
-    --primary2: #00245e;
+    --primary2: #0575E6;
     --primary3: #dcf4fd;
     --primary4: #0044a0;
     --secondary: white;
@@ -917,6 +917,8 @@ label {
 /*Tema dark*/
 .portafolio.dark header{
     background-color: var(--primary2);
+	background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+	background: linear-gradient(to right, #021B79, #0575E6);
     box-shadow: 0px 10px 10px -6px var(--dark1);
 }
 
@@ -928,12 +930,14 @@ label {
 }
 
 .portafolio.dark .navbar .icon_link:hover {
-    color: var(--primary4);
+    color: var(--primary2);
+    background: -webkit-linear-gradient(to right, #99d3df, var(--primary3));
+	background: linear-gradient(to right, #99d3df, var(--primary3));
 }
 
 .portafolio.dark .navbar a:hover{
     background-color: var(--primary3);
-    color: var(--primary4);
+    color: var(--primary2);
 }
 
 /* Media Query para hacerlo responsivo */
@@ -955,6 +959,9 @@ label {
 
 .portafolio.dark .square {
     background-color: var(--primary3);
+    background: -webkit-linear-gradient(to right, #99d3df, var(--primary3));
+	background: linear-gradient(to right, #99d3df, var(--primary3));
+    
 }
 
 .portafolio.dark .square::before {
@@ -967,6 +974,8 @@ background-image: conic-gradient(transparent, transparent, transparent, var(--pr
 
 .portafolio.dark .square span {
 background-color: var(--primary3);
+background: -webkit-linear-gradient(to right, #99d3df, var(--primary3));
+	background: linear-gradient(to right, #99d3df, var(--primary3));
 }
 
 .portafolio.dark .circle-trans {
@@ -976,6 +985,7 @@ background-color: var(--primary3);
         
 .portafolio.dark .circle {
     border: solid 15px var(--primary4);
+    
 }
 
 .portafolio.dark .square-text {
@@ -1005,15 +1015,21 @@ background-color: var(--primary3);
 /* Briefcase */
 .portafolio.dark #briefcase {
     background: var(--primary3);
+    background: -webkit-linear-gradient(to right, #99d3df, var(--primary3));
+	background: linear-gradient(to right, #99d3df, var(--primary3));
 }
 
 .portafolio.dark .briefcase {
     background-color: var(--primary3);
+    background: -webkit-linear-gradient(to right, #99d3df, var(--primary3));
+	background: linear-gradient(to right, #99d3df, var(--primary3));
 }
 
 /* Skills */
 .portafolio.dark section.skills {
-    background-color: var(--primary3);
+    background: var(--primary3);
+    background: -webkit-linear-gradient(to right, #99d3df, var(--primary3));
+	background: linear-gradient(to right, #99d3df, var(--primary3));
 }
 
 /* efectos de tooltips */
@@ -1026,7 +1042,9 @@ background-color: var(--primary3);
 
 /* about */
 .portafolio.dark .about {
-    background-color: var(--primary2);
+    background: var(--primary2);
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+	background: linear-gradient(to right, #021B79, #0575E6);
 }
 
 .portafolio.dark .about p {
